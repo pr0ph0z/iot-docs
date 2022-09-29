@@ -8,6 +8,7 @@ export default {
               items: [
                 { text: 'Prasyarat', link: '/prerequisite.md' },
                 { text: 'RabbitMQ', link: '/rabbitmq.md' },
+                { text: 'MongoDB', link: '/mongodb.md' },
               ]
             },
         ]
