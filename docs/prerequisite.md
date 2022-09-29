@@ -7,7 +7,7 @@ Terdapat beberapa hal yang perlu dipenuhi termasuk _software_ yang di-_install_ 
 - [RabbitMQ](https://rabbitmq.com/) (_install_ secara lokal maupun di _server_)
 - [MongoDB (plus MongoDB Compass)](https://www.mongodb.com/) (_install_ secara lokal maupun di _server_)
 - [NodeJS](https://nodejs.org/)
-- [Git](https://git-scm.com/)
+- [Git](https://git-scm.com/) (opsional)
 - IDE (disarankan untuk menggunakan [Visual Studio Code](https://code.visualstudio.com/))
 
 ## Alur
