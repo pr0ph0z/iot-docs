@@ -9,6 +9,7 @@ export default {
                 { text: 'Prasyarat', link: '/prerequisite.md' },
                 { text: 'RabbitMQ', link: '/rabbitmq.md' },
                 { text: 'MongoDB', link: '/mongodb.md' },
+                { text: 'Service', link: '/service.md' },
               ]
             },
         ]
