@@ -4,7 +4,7 @@ _Service_ dibuat untuk menerima pesan dari _message broker_ dan mengolahnya sesu
 
 ## Clone Source Code
 
-_Clone_ atau _download template source code service_ yang sudah disediakan di [https://github.com/pr0ph0z/iot-service](https://github.com/pr0ph0z/iot-service), masuk ke dalam folder yang sudah di-_clone_, lalu buka IDE dengan path folder tersebut.
+_Clone_ atau _download template source code service_ yang sudah disediakan di [https://github.com/pr0ph0z/iot-service](https://github.com/pr0ph0z/iot-service), masuk ke dalam folder yang sudah di-_clone_, lalu buka IDE dengan _path_ folder tersebut.
 
 ## Struktur Project
 
@@ -28,6 +28,7 @@ _Clone_ atau _download template source code service_ yang sudah disediakan di [h
 
 - **.env.example** berfungsi untuk menyimpan key yang diperlukan untuk disimpan di file **.env**
 - **index.js** berfungsi untuk melakukan inisiasi koneksi ke _database_, AMQP, dan mulai _subscribe_ pesan dari RabbitMQ
+- **consumer.js** berfungsi untuk melakukan proses _subscribe_ ke AMQP
 - **config/index.js** berfungsi untuk menyimpan _config variable_, berisi _config_ yang di-_load_ dari file **.env**
 - **controllers** folder yang bertujuan untuk menyimpan semua file dimana business logic ketika pesan dari RabbitMQ diterima dapat diproses
 - **databases** folder yang bertujuan untuk menyimpan fungsi inisiasi koneksi ke database
@@ -79,7 +80,7 @@ Di bagian **Publish message** pada form **Routing key**, tambahkan _routing key_
 
 ## Apa yang Terjadi?
 
-Kalau kital lihat di `index.js`, setelah dilakukan inisiasi ke koneksi, dipanggil fungsi `consume()` dari file `src/consume.js` dengan parameter variabel koneksi atau channel tersebut. Di dalam fungsi consume, dipanggil fungsi `create()` dari file `src/controllers/main.js` dengan parameter channel dan pesan yang diterima.
+Kalau kita lihat di `index.js`, setelah dilakukan inisiasi ke koneksi, dipanggil fungsi `consume()` dari file `src/consume.js` dengan parameter variabel koneksi atau _channel_ tersebut. Di dalam fungsi `consume`, dipanggil fungsi `create()` dari file `src/controllers/main.js` dengan parameter _channel_ dan pesan yang diterima.
 
 Setelah pesan diterima, karena idenya adalah mengirim beberapa nilai dalam satu pesan, maka dilakukanlah _string splitting_ dengan `#` sebagai _delimiter_ atau pembatasnya sehingga didapatlah 3 nilai dan diberi nama `valueA`, `valueB`, dan `valueC`.
 
@@ -162,6 +163,6 @@ const testModel = new mongoose.Schema(
 
 ## Cek Data
 
-Data yang sudah dibuat tadi dapat dilihat di MongoDB Compass dengan menekan tombol **Refresh**
+Data yang sudah dibuat tadi dapat dilihat di MongoDB Compass dengan menekan tombol **Refresh**.
 
 ![Mongo Data](./mongo-data.png)

@@ -10,6 +10,7 @@ export default {
                 { text: 'RabbitMQ', link: '/rabbitmq.md' },
                 { text: 'MongoDB', link: '/mongodb.md' },
                 { text: 'Service', link: '/service.md' },
+                { text: 'REST API & Website', link: '/restapi-website.md' },
               ]
             },
         ]

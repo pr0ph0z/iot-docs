@@ -20,7 +20,7 @@ Setelah tombol diklik akan muncul _queue_ yang dibuat sebelumnya.
 
 ## Exchange
 
-Jika _queue_ diibaratkan sebagai kotak masuk, maka _exchange_ adalah kantor pos yang bertugas untuk menyortir kemana pesan akan diteruskan. Karena dari _embedded system_ akan dikirimkan melalui protokol MQTT dan service akan _subscribe_ melalui protokol AMQP, maka perlu dijembatani terlebih dahulu
+Jika _queue_ diibaratkan sebagai kotak masuk, maka _exchange_ adalah kantor pos yang bertugas untuk menyortir kemana pesan akan diteruskan. Karena dari _embedded system_ akan dikirimkan melalui protokol MQTT dan service akan _subscribe_ melalui protokol AMQP, maka perlu dijembatani terlebih dahulu.
 
 ### Membuat Routing Key
 
